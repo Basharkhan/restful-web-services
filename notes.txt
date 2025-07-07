@@ -1,1 +1,13 @@
-begin from 176
+begin from 182
+
+1. Open Resource (Quick File Search)
+Best for searching any file by name in your workspace.
+
+Shortcut (Windows/Linux): Ctrl + Shift + R
+
+Shortcut (Mac): Cmd + Shift + R
+
+2. Navigate → Open Type (For classes and interfaces)
+If you want to find a Java class or interface, use:
+
+Shortcut: Ctrl + Shift + T
