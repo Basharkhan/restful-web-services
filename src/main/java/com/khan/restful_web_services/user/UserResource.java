@@ -14,6 +14,8 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
+import jakarta.validation.Valid;
+
 @RestController
 public class UserResource {
 	@Autowired
@@ -29,14 +31,14 @@ public class UserResource {
 		Optional<User> user = userDaoService.findById(id);
 		
 		if (user.isEmpty()) {			
-			throw new UserNotFoundException("id:" + id);			
+			throw new UserNotFoundException("User not found with id: " + id);			
 		}
 		
 		return user;
 	}
 	
 	@PostMapping("/users")
-	public ResponseEntity<User> addUser(@RequestBody User user) {
+	public ResponseEntity<User> addUser(@Valid @RequestBody User user) {
 		User savedUser = userDaoService.addUser(user);
 		
 		URI location = ServletUriComponentsBuilder

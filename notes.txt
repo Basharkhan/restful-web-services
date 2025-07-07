@@ -1,4 +1,4 @@
-begin from 182
+begin from 188
 
 1. Open Resource (Quick File Search)
 Best for searching any file by name in your workspace.
@@ -11,3 +11,9 @@ Shortcut (Mac): Cmd + Shift + R
 If you want to find a Java class or interface, use:
 
 Shortcut: Ctrl + Shift + T
+
+<dependency>
+	<groupId>org.springdoc</groupId>
+	<artifactId>springdoc-openapi-starter-webmvc-ui</artifactId>
+	<version>2.7.0</version>
+</dependency>
