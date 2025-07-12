@@ -1,4 +1,5 @@
-begin from 188
+*** watch 193 again and implement it
+begin from 193
 
 1. Open Resource (Quick File Search)
 Best for searching any file by name in your workspace.

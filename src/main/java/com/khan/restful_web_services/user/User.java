@@ -2,6 +2,7 @@ package com.khan.restful_web_services.user;
 
 import java.time.LocalDate;
 
+import com.fasterxml.jackson.annotation.JsonProperty;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Past;
@@ -12,10 +13,12 @@ public class User {
 	
 	@NotBlank(message = "Name is required")
 	@Size(min = 2, message = "Name must contain at least 2 characters")
+	@JsonProperty("user_name")
 	private String name;
 	
 	@NotNull(message = "Birth date is required")
 	@Past(message = "Birth date must be a past date")
+	@JsonProperty("birth_date")
 	private LocalDate birthDate;		
 	
 	public User(Integer id, String name, LocalDate birthDate) {
