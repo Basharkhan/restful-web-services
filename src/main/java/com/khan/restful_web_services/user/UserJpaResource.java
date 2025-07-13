@@ -3,7 +3,6 @@ package com.khan.restful_web_services.user;
 import com.khan.restful_web_services.jpa.PostRepository;
 import com.khan.restful_web_services.jpa.UserRepository;
 import jakarta.validation.Valid;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.hateoas.EntityModel;
 import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 import org.springframework.http.ResponseEntity;
